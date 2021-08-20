@@ -21,6 +21,10 @@ window.onload = function(){
     myForm.addEventListener('submit', function(e){
         e.preventDefault();
 
+        let email = document.querySelector('#email');
+        if(email.value === ''){
+            alert("")
+        }
         console.log(e)
         console.log(e.target.email);
 
